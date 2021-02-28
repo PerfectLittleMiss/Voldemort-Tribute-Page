@@ -7,39 +7,98 @@ body {
 	background-color: #034227;
 }
 
-#title {
-	border: 5px solid $boclr;
-	margin: 10px;
-	width: 70%;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	padding: 5px;
-	background-color: $dbgclr;
-	color: $clr;
+#main {
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: center;
+}
 
-	button {
-		float: right;
-		transform: translate(55px, -50px);
-	}
+.modal-content {
+	padding: 12px;
+	background-color: #ECFEF6;
+}
+
+.btn {
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#btnDiv {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 
 	.modal-content {
 		color: black;
 	}
 }
 
+#title {
+	border: 5px solid $boclr;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding: 5px;
+	background-color: $dbgclr;
+	color: $clr;
+	display: block;
+	clear: both;
+}
+
+@media (min-width: 400px) {
+	#img-div {
+		#image {
+			max-width: 60%;
+		}
+
+		#img-caption {
+			margin: 25px;
+		}
+	}
+
+	#title {
+		width: 70%;
+	}
+}
+
+@media (max-width: 400px) {
+	#img-div {
+		#image {
+			max-width: 90%;
+		}
+
+		#img-caption {
+			margin: 12px;
+		}
+	}
+
+	#title {
+
+		width: 85%;
+
+		h3 {
+			font-size: 16pt;
+		}
+	}
+}
+
 
 #img-div {
-	width: 100%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	box-sizing: border-box;
 
 	#image {
-		max-width: 60%;
 		height: auto;
 		display: block;
 		margin: auto;
@@ -51,26 +110,62 @@ body {
 		color: $clr;
 		text-align: center;
 		border: 1.5px solid $boclr;
-		margin: 25px;
 		padding: 5px;
 		background-color: $dbgclr;
 	}
 }
 
 #tribute-info {
-	width: 98%;
-	margin: auto;
+	width: 95%;
+	margin: 10px;
 	display: block;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+
+@media (min-width: 770px) {
+	#bio {
+		width: 63%;
+		float: left;
+		min-height: 50%;
+		max-height: 50%;
+		margin: 10px;
+	}
+
+	#accomp {
+		width: 63%;
+		float: left;
+		min-height: 50%;
+		max-height: 50%;
+		margin: 10px;
+	}
+
+	#time {
+		width: 33%;
+		float: right;
+		height: 100%;
+		min-height: 100%;
+		max-height: 100%;
+		padding: 5px;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 770px) {
+
+	#time {
+		margin-top: 12px;
+		margin-bottom: 12px;
+		padding: 20px;
+	}
 }
 
 #bio {
-	width: 64%;
-	min-height: 50%;
-	max-height: 50%;
-	float: left;
 	padding: 8px;
-	margin: 10px;
 	border: 2px solid $boclr;
 	color: $clr;
 	background-color: $dbgclr;
@@ -81,12 +176,7 @@ body {
 }
 
 #accomp {
-	width: 63%;
-	min-height: 50%;
-	max-height: 50%;
-	float: left;
 	padding: 8px;
-	margin: 10px;
 	border: 2px solid $boclr;
 	color: $clr;
 	background-color: $dbgclr;
@@ -97,15 +187,6 @@ body {
 }
 
 #time {
-	width: 33%;
-	height: 100%;
-	min-height: 100%;
-	max-height: 100%;
-	float: right;
-	padding: 5px;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
 	border: 2px solid $boclr;
 	color: $clr;
 	background-color: $dbgclr;
@@ -120,15 +201,15 @@ body {
 	background-color: $dbgclr;
 	color: $clr;
 	padding: 10px;
-	margin: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	display: block;
-	width: 98%;
+	width: 95%;
 	position: relative;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	clear: both;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
+	clear: both;
 
 	p {
 		margin: auto;

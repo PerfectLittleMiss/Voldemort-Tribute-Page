@@ -12,31 +12,32 @@
 </head>
 <body>
 	<main id="main">
-		<header>
-			<div id="title">
-				<h3>Tom Riddle aka Lord Voldemort</h3>
+		<div id="title">
+			<h3>Tom Riddle aka Lord Voldemort</h3>	
+		</div>
 
-				<!-- Small modal -->
-				<button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target=".bd-example-modal-sm">!!</button>
-				<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  					<div class="modal-dialog modal-dialog-centered modal-sm">
-    					<div class="modal-content">
-      						<h4>Disclaimer:</h4>
-      						<p>
-      							Tom Riddle is a fictional character that belongs to J.K. Rowling. I do not own the character or the image.
-      						</p>
-    					</div>
-  					</div>
-				</div>
-			</div>			
-		</header>
+		<!-- Small modal -->
+		<div id="btnDiv">
+			<button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target=".bd-example-modal-sm">Disclaimer</button>
+			<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered modal-sm">
+					<div class="modal-content">
+						  <h4>Disclaimer:</h4>
+						  <p>
+						  Tom Riddle is a fictional character that belongs to J.K. Rowling. I do not own the character or the image.
+						  </p>
+					</div>
+				  </div>
+			</div>
+		</div>
+		
 		<div id="img-div">
 			<img src="images/mainimg.jpg" id="image" alt="Tom Riddle on left and Voldemort on right" data-toggle="tooltip" data-placement="left" title="Image Source: http://community.sparknotes.com/2016/06/03/quiz-which-voldemort-are-you">
 			<p id="img-caption">Tom Riddle in his youth on the left and Lord Voldemort fully grown on the right</p>
 		</div>
-		<br>
+		
 		<div id="tribute-info">
-			<div class="flex col-7" id="bio">
+			<div id="bio">
 				<article>
 					<h6>Biography:</h6>
 					&emsp;Tom Marvolo Riddle was born in a London orphanage on December 31, 1926. His parents were Merope Gaunt, a witch, and Tom Riddle Sr, a muggle. He attended Hogwarts School of Witchcraft and Wizardry and was placed in Slytherin house. He was one of few Parselmouths in wizarding history and opened the Chamber of Secrets while he was in school, resulting in the death of a classmate and the expulsion of another.
@@ -48,7 +49,7 @@
 					&emsp;Voldemort disappeared for 11 years before reappearing while trying to steal the Sorcerer's Stone. He was once again thwarted by Harry Potter and he disappeared for a few years only to be fully returned to power 3 years later. After his resurrection, Voldemort began to rebuild his army and 2 years later overthrew the Ministry of Magic began a new reign of terror. However, not even an entire year later his reign of terror would come to an end at the Battle of Hogwarts where he was once again defeated by Harry Potter, this time for good.
 				</article>
 			</div>
-			<div class="flex col-5" id="time">
+			<div id="time">
 				<h6>Timeline:</h6>
 				<ul style="padding: 0; list-style-type: none;">
 					<li><strong>Dec. 31, 1926:</strong><br>&emsp;Born</li>
@@ -72,7 +73,7 @@
 					<li><strong>May 2, 1998:</strong><br>&emsp;Died</li>
 				</ul>
 			</div>
-			<div class="flex col-7" id="accomp">
+			<div id="accomp">
 				<article>
 					<h6>Accomplishments:</h6>
 					<ul>
